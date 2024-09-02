@@ -1,0 +1,73 @@
+.figures-container {
+    background: #ffffff;
+    color: #B07D3B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+   
+  }
+  
+  .wave-figure {
+    float: left;
+    margin: 20px;
+    
+    transform-origin: center -36px;
+    position: relative;
+    /* width: 500px; */
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  
+  .wave-figure:hover {
+    animation: wave-animation ease-in-out 0.5s infinite alternate;
+    /* cursor: pointer; */
+  }
+  
+  .figure-img {
+    border: 10px outset #B07D3B;
+    /* border: 5px   #B07D3B; */
+    display: block;
+    width: 200px;
+    height: 250px;
+    border-radius: 25px 0px 25px 0px;
+  }
+  
+  .figure-caption {
+    text-align: center;
+  }
+  
+  .wave-figure:after {
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border: 1.5px solid #B07D3B;
+    top: -10px; 
+    left: 50%;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(35deg);
+  }
+  
+  .wave-figure:before {
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+  }
+  

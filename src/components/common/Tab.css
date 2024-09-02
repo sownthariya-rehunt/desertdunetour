@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Rakkas&display=swap');
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    color:#B07D3B !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root:hover{
+    color:#000000 !important;
+background-color: #b07d3b4f;
+}
+.css-1aquho2-MuiTabs-indicator{
+    background-color: #B07D3B !important; 
+}
+.golden-h5 {
+    background-image:linear-gradient(45deg,#B8860B,  #b8870bca 40%, #B8860B) !important; /* Standard */
+text-shadow:20px #B07D3B , 30px#e6c50b;
+font-family: "Aref Ruqaa Ink", serif;
+  font-weight: 700;
+  font-style: normal;
+font-size: 30px;
+    margin-right:200px;
+ color: transparent;
+    -webkit-background-clip: text !important;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    padding: 0.25em 0.5em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.25em;
+    white-space: nowrap;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 100%;
+    transition-property: visibility;
+    transition-delay: 0s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition-delay: 0.3s;
+  }
